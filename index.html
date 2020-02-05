@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Tikka</title>
+</head>
+
+<body>
+  <header>
+    <h1>HOME</h1>
+  </header>
+
+  <div class="container">
+    <div id="img_unit">
+      <div class="photo">
+        <img class="img" src="img/Tikka.jpg">
+      </div>
+    </div>
+    <div class="title">
+      <div class="name">
+        <h2>Tikka</h2>
+      </div>
+      <div class="syoku">
+        <h3>Game Creater/Web Developer</h3>
+      </div>
+
+      <ul id="menu">
+        <li><a href="#about" class="button is-success is-large">About me</a></li>
+        <li><a href="#accounts" class="button is-success is-large">Accounts</a></li>
+        <li><a href="#contact" class="button is-success is-large">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <div class="list">
+      <div id="about">
+        <h2>About me</h2>
+        <p><span>本名は新井優太、東京都品川区出身のいろいろ作ってるクリエイター。</span></p>
+        <p><span>新卒で入社したスロット専門の映像制作会社が潰れて、半年間警備員のバイトをしながらフリーとして活動を始める。</span></p>
+        <p><span>現在はCG、映像制作が中心のフリーランスとしてなんとか生きている。</span></p>
+        <p><span>2018年にUE4でゲーム制作を始める。2020年Web制作に出会う。</span></p>
+      </div>
+      <div id="accounts">
+        <h2>Accounts</h2>
+        <div class="blog">
+          <p>Blog</p>
+          <a href="https://note.com/saaristo">note</a>
+        </div>
+        <div class="twitter">
+          <p>Twitter</p>
+          <a href="https://twitter.com/Tikka123456">@Tikka123456</a>
+        </div>
+        <div class="scrapbox">
+          <p>ScrapBox</p>
+          <a href="https://scrapbox.io/Kitutukanai/">scrapbox</a>
+        </div>
+        <div class="itch">
+          <p>Game</p>
+          <a href="https://tikkagames.itch.io/">.itch.io</a>
+        </div>
+      </div>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p><span>norsupyssy1020@gmail.com</span></p>
+        <p><span>080-5465-2856</span></p>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2020 Tikka
+  </footer>
+
+
+
+  <script src="js/jquery.min.js"></script>
+
+  <script>
+    $(function () {
+      // #で始まるアンカーをクリックした場合に処理
+      $('a[href^=#]').click(function () {
+        // スクロールの速度
+        let speed = 400; // ミリ秒
+        // アンカーの値取得
+        let href = $(this).attr("href");
+        // 移動先を取得
+        let target = $(href == "#" || href == "" ? 'html' : href);
+        // 移動先を数値で取得
+        let position = target.offset().top;
+        // スムーススクロール
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>
