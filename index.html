@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style3.css">
 
   <title>Tikka</title>
 </head>
@@ -30,77 +32,52 @@
       <div class="syoku">
         <h3>Game Creater/Web Developer</h3>
       </div>
-
-      <ul id="menu">
-        <li><a href="#about" class="button is-success is-large">About me</a></li>
-        <li><a href="#accounts" class="button is-success is-large">Accounts</a></li>
-        <li><a href="#contact" class="button is-success is-large">Contact</a></li>
-
-      </ul>
-
     </div>
 
-    <div class="list">
-      <div id="about">
-        <h2>About me</h2>
-        <p><span>本名は新井優太、東京都品川区出身のいろいろ作ってるクリエイター。</span></p>
-        <p><span>新卒で入社したスロット専門の映像制作会社が潰れて、半年間警備員のバイトをしながらフリーとして活動を始める。</span></p>
-        <p><span>現在はCG、映像制作が中心のフリーランスとしてなんとか生きている。</span></p>
-        <p><span>2018年にUE4でゲーム制作を始める。2020年Web制作に出会う。</span></p>
+    <div class="aboutme">
+      <div class="about">
+        <h2>About Me</h2>
       </div>
-      <div id="accounts">
-        <h2>Accounts</h2>
-        <div class="blog">
-          <p>Blog</p>
-          <a href="https://note.com/saaristo">note</a>
+      <div class="Keireki">
+        <p>本名は新井優太、東京都品川区出身のいろいろ作ってるクリエイター。</p>
+        <p>新卒で入社したスロット専門の映像制作会社が潰れて、半年間警備員のバイトをしながらフリーとして活動を始める。</p>
+        <p>現在はCG、映像制作が中心のフリーランスとしてなんとか生きている。</p>
+        <p>2018年にUE4でゲーム制作を始める。2020年Web制作始める。</p>
+        <div class="ginou">
+          <br>
+          <p2><span>Maya/Houdini/AfterEffects/PhotoShop/UnrealEngine4を用いたゲーム制作とか、</span></p2>
+          <p2><span>JavaScript/Vue.js/Node.js/MongoDB/Gitを用いたWeb制作します。</span></p2>
         </div>
-        <div class="twitter">
-          <p>Twitter</p>
-          <a href="https://twitter.com/Tikka123456">@Tikka123456</a>
+        <br>
+        <div class="contact">
+          <h2>Contact</h2>
+          <p3><span>norsupyssy1020@gmail.com</span></p3><br>
+          <p3><span>080-5465-2856</span></p3>
         </div>
-        <div class="scrapbox">
-          <p>ScrapBox</p>
-          <a href="https://scrapbox.io/Kitutukanai/">scrapbox</a>
-        </div>
-        <div class="itch">
-          <p>Game</p>
-          <a href="https://tikkagames.itch.io/">.itch.io</a>
-        </div>
-      </div>
-      <div id="contact">
-        <h2>Contact</h2>
-        <p><span>norsupyssy1020@gmail.com</span></p>
-        <p><span>080-5465-2856</span></p>
-
       </div>
     </div>
   </div>
+
+  <nav class="cp_sidebarmenu">
+    <ul>
+      <li><a href="https://twitter.com/Tikka123456"><i class="fa fa-home fa-2x fa-fw"></i><span>Twitter</span></a></li>
+      <li><a href="https://note.com/saaristo"><i class="fa fa-file-text fa-2x fa-fw"></i><span>note</span></a></li>
+      <li><a href="https://scrapbox.io/Kitutukanai/"><i class="fa fa-comment fa-2x fa-fw"></i><span>ScrapBox</span></a></li>
+      <li><a href="https://tikkagames.itch.io/"><i class="fa fa-share-alt fa-2x fa-fw"></i><span>.itch.io</span></a></li>
+    </ul>
+
+    <ul class="control">
+      <li><a href="#"><i class="fa fa-cog fa-2x fa-fw"></i><span>Menu</span></a></li>
+    </ul>
+  </nav>
+
   <footer>
-    &copy; 2020 Tikka
+    <div class="copyright">
+      <p>© 2020 Tikka</p>
+    </div>
+    
   </footer>
 
-
-
-  <script src="jquery.min.js"></script>
-
-  <script>
-    $(function () {
-      // #で始まるアンカーをクリックした場合に処理
-      $('a[href^=#]').click(function () {
-        // スクロールの速度
-        let speed = 400; // ミリ秒
-        // アンカーの値取得
-        let href = $(this).attr("href");
-        // 移動先を取得
-        let target = $(href == "#" || href == "" ? 'html' : href);
-        // 移動先を数値で取得
-        let position = target.offset().top;
-        // スムーススクロール
-        $('body,html').animate({ scrollTop: position }, speed, 'swing');
-        return false;
-      });
-    });
-  </script>
 </body>
 
 </html>
