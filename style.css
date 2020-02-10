@@ -1,124 +1,89 @@
+@media only screen and (max-width: 600px) {
+  .description img {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 650px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 250px;
+  /* footerの高さ */
+  padding: 1em 0 10em 0;
+  min-height: 100vh;
 }
 
 img {
-    width: 50%;
-    height: 50%;
-    margin: 48px 0 0 0;
-    vertical-align: middle;
-    background-color: rgba(26, 55, 229, 0.05);
+  width: 50%;
+  height: 50%;
+  margin: 48px 0 0 0;
+  vertical-align: middle;
+  background-color: rgba(26, 55, 229, 0.05);
 }
 
 header {
-    background-color: #00896B;
-    color: #fff;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 100;
+  background-color: #00896B;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 30px;
-    padding: 5px;
-    text-align: center;
-    font-family: 'Russo One', sans-serif;
+  margin: 0;
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
 }
 
 .photo {
-    text-align: center;
+  text-align: center;
 }
 
 .title {
-    padding-top: 10px;
-    text-align: center;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .title h2 {
-    font-size: 45px;
-    font-family: 'Russo One', sans-serif;
-}
-
-#menu {
-    margin-top: 30px;
-    overflow: hidden;
-    padding-left: 90px;
+  font-size: 45px;
+  font-family: 'Russo One', sans-serif;
 }
 
 .shoku h3 {
-    font-family: 'Russo One', sans-serif;
+  font-family: 'Russo One', sans-serif;
 }
 
-#menu li {
-    width: 160px;
-    font-size: 20px;
-    text-align: center;
-    float: left;
-    margin-right: 2px;
-    font-family: 'Asap', sans-serif;
+.aboutme {
+  padding-top: 453px;
 }
 
-#menu li a {
-    color: #fff;
-    padding: 20px;
+.aboutme h2 {
+  font-size: 45px;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
 }
 
-.list {
-    margin-top: 500px;
-    font-family: 'Asap', sans-serif;
+.aboutme.keireki {
+  font-family: 'Asap', sans-serif;
+  font-size: 29px;
 }
 
-.list h2 {
-    font-size: 25px;
+.ginou p2 {
+  font-family: 'Asap', sans-serif;
+  font-size: 15px;
+  padding-top: 20px;
 }
-
-#accounts {
-    margin-top: 60px;
-}
-
-.blog{
-    padding-top: 7px;
-}
-
-#accounts p {
-    font-size: 19px;
-    font-weight: bold;
-}
-
-#twitter{
-    padding-top: 18px;
-}
-
-#scrapbox{
-    padding-top: 18px;
-}
-
-#itch{
-    padding-top: 18px;
-}
-
-#contact {
-    margin-top: 60px;
-}
-
-footer{
-    text-align: center;
-    font-size: 80%;
-    padding: 5px;
-}
-
-@media only screen and (max-width: 600px){
-    .description img{
-        float: none;
-        margin: 0 auto;
-        display: block;
-    }
+.contact p3{
+  font-size: 15px;
+  font-family: 'Asap', sans-serif;
 }
